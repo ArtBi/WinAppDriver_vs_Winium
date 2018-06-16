@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Smoke_Tests_Without_Reload">
+
+
+    <test name="WinAppDriver">
+        <classes>
+            <class name="winAppDriver.CalculatorTest"/>
+        </classes>
+    </test>
+
+    <test name="WiniumDriver">
+        <classes>
+            <class name="winiumDriver.CalculatorTest"/>
+        </classes>
+    </test>
+
+
+</suite>

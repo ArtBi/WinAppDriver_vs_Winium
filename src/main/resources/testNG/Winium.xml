@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Smoke_Tests_Without_Reload">
+
+
+    <test name="WiniumDriver1">
+        <classes>
+            <class name="winiumDriver.CalculatorTest"/>
+        </classes>
+    </test>
+    <test name="WiniumDriver2">
+        <classes>
+            <class name="winiumDriver.CalculatorTest"/>
+        </classes>
+    </test>
+    <test name="WiniumDriver3">
+        <classes>
+            <class name="winiumDriver.CalculatorTest"/>
+        </classes>
+    </test>
+    <test name="WiniumDriver4">
+        <classes>
+            <class name="winiumDriver.CalculatorTest"/>
+        </classes>
+    </test>
+    <test name="WiniumDriver5">
+        <classes>
+            <class name="winiumDriver.CalculatorTest"/>
+        </classes>
+    </test>
+
+
+</suite>

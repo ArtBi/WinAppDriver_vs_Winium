@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Smoke_Tests_Without_Reload">
+
+
+    <test name="WinAppDriver1">
+        <classes>
+            <class name="winAppDriver.CalculatorTest"/>
+        </classes>
+    </test>
+    <test name="WinAppDriver2">
+        <classes>
+            <class name="winAppDriver.CalculatorTest"/>
+        </classes>
+    </test>
+    <test name="WinAppDriver3">
+        <classes>
+            <class name="winAppDriver.CalculatorTest"/>
+        </classes>
+    </test>
+    <test name="WinAppDriver4">
+        <classes>
+            <class name="winAppDriver.CalculatorTest"/>
+        </classes>
+    </test>
+    <test name="WinAppDriver5">
+        <classes>
+            <class name="winAppDriver.CalculatorTest"/>
+        </classes>
+    </test>
+
+</suite>
