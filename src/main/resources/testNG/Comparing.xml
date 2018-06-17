@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Smoke_Tests_Without_Reload">
+<suite name="Comparing">
 
 
     <test name="WinAppDriver">
