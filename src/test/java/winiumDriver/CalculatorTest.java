@@ -35,10 +35,7 @@ public class CalculatorTest {
 
     @BeforeTest
     public void setup() {
-        setDesktopOptions();
         driverInitializationSteps();
-
-        //calculatorSession.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         calculatorResult = calculatorSession.findElementById("150");
 
     }
@@ -50,7 +47,6 @@ public class CalculatorTest {
 
     private void driverInitializationSteps() {
         setDesktopOptions();
-        setWiniumService();
         try {
             calculatorSession = new WiniumDriver(new URL("http://localhost:9999"), options);
         } catch (MalformedURLException e) {
@@ -60,17 +56,7 @@ public class CalculatorTest {
 
     @AfterTest
     protected void stopWiniumService() {
-        calculatorSession.close();
-        service.stop();
-
-    }
-
-    private void setWiniumService() {
-        service = new WiniumDriverService.Builder()
-                .usingDriverExecutable(new File("src/main/resources/drivers/Winium.Desktop.Driver.exe"))
-                .usingPort(9999)
-                .withSilent(false)
-                .buildDesktopService();
+        calculatorSession.quit();
     }
 
     @BeforeMethod
